@@ -4,6 +4,8 @@ const app = require('../index'); // Import the Express app
 const HotelRoom = require('../models/HotelRoom'); // Import the HotelRoom model
 
 
+jest.setTimeout(30000);
+
 // Connect to a test database before running tests
 beforeAll(async () => {
     const dbURI = "mongodb+srv://user2:JyRr3UEZtvSPBh2K@cluster0.vryt6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
